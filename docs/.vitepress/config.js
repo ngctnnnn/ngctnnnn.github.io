@@ -1,5 +1,5 @@
 // @ts-check
-require('./genMetadata').watchPosts()
+require('../../.vitepress/genMetadata').watchPosts()
 
 /**
  * @type {import('vitepress').UserConfig}
