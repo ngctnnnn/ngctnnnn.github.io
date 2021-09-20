@@ -1,0 +1,21 @@
+[
+    {
+        "title":"Vue 3.2 Released!",
+        "href":"/posts/vue-3.2.html",
+        "date":{
+            "time":1628164800000,
+            "string":"August 5, 2021"
+        },
+        "excerpt":"\nWe are excited to announce the release of Vue.js 3.2 \"Quintessential Quintuplets\"! This release includes many significant new features and performance improvements, and contains no breaking changes.\n\n"
+    },
+    {
+        "title":"Announcing Vue 3.0 \"One Piece\"",
+        "href":"/posts/vue-3-one-piece.html",
+        "date":
+        {
+            "time":1600430400000,
+            "string":"September 18, 2020"
+        },
+        "excerpt":"\n<p align=\"center\">\n  <img width=\"200\" height=\"177px\" src=\"https://user-images.githubusercontent.com/499550/93624428-53932780-f9ae-11ea-8d16-af949e16a09f.png\" alt=\"one-piece-logo\">\n</p>\n\nToday we are proud to announce the official release of Vue.js 3.0 \"One Piece\". This new major version of the framework provides improved performance, smaller bundle sizes, better TypeScript integration, new APIs for tackling large scale use cases, and a solid foundation for long-term future iterations of the framework.\n\n"
+    }
+]
