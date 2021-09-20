@@ -49,3 +49,4 @@ While Vue 3 beings many fundamental improvements and opens up avenues for future
 - Vuex 5 (TBD)
 
 In addition, we are excited about other frameworks and libraries in the ecosystem making progress towards Vue 3 support. And of course, we can’t wait to see what new ideas and tools you all have as we embark on a new chapter in the Vue.js roadmap.
+
