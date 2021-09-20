@@ -1,1 +1,0 @@
-import{o as t,c as e}from"./app.084d7d0c.js";const a='{"title":"A technical blog","description":"","frontmatter":{"title":"A technical blog","subtext":"Machine Learning, Deep Learning"},"relativePath":"index.md","lastUpdated":1632130236625}',n={};n.render=function(a,n,i,r,c,d){return t(),e("div")};export{a as __pageData,n as default};
