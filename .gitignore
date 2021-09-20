@@ -1,5 +1,5 @@
 node_modules
-dist
+# dist
 posts/hello-2021.md 
 posts/vue-3-one-piece.md
 # .vitepress/metadata.json
