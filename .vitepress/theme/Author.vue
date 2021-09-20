@@ -28,14 +28,14 @@ const { frontmatter } = useData()
           <dl class="text-sm font-medium leading-5 whitespace-nowrap">
             <dt class="sr-only">Name</dt>
             <dd class="text-gray-900">{{ frontmatter.author }}</dd>
-            <dt v-if="frontmatter.twitter" class="sr-only">Linkedin</dt>
-            <dd v-if="frontmatter.twitter">
+            <dt v-if="frontmatter.linkedin" class="sr-only">Linkedin</dt>
+            <dd v-if="frontmatter.linkedin">
               <a
-                :href="'https://linkedin.com/in/' + frontmatter.twitter"
+                :href="'https://linkedin.com/in/' + frontmatter.linkedin"
                 target="_blank"
                 rel="noopnener noreferrer"
                 class="link"
-                >{{ frontmatter.twitter }}</a
+                >{{ frontmatter.linkedin }}</a
               >
             </dd>
           </dl>
