@@ -6,7 +6,8 @@
     "dev": "vitepress",
     "build": "vitepress build --mpa && node ./.vitepress/genFeed",
     "serve": "vitepress serve",
-    "deploy": "sh deploy.sh"
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs --port 8080"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.4.1",
