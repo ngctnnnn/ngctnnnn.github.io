@@ -7,9 +7,10 @@ linkedin: 'ngctnnnn'
 ---
 Nowadays, COVID-19 situation becomes more and more severe, as well as sophisticated in not only Vietnam but also worldwide. That is why we have to take our actions immediately in order to cope with this pandemic. And the very first step in getting through this pandemic is that we have to rapidly identify COVID-19 cases. Thus, we propose a rapidly testing method which has a high productivity in a short time, which is to use Deep Convolutional Neural Network to detect COVID-19 on Chest X-ray (CXR) images.    
 
+---
+
 Detailed implementation and experiments: [ngctnnnn/Detect-COVID19](https://github.com/ngctnnnn/Detect-COVID19).
 
----
 ### Table of contents
 1. [Scientific base](#1-scientific-base)
 2. [A deep learning based approach to the problem](#2-a-deep-learning-based-approach-to-the-problem)
