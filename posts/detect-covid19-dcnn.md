@@ -1,11 +1,11 @@
 ---
 title: Detect COVID-19 with Deep Learning
-date: 2021-09-01
-author: Ngoc Tan
+date: 2021-08-30
+author: Tan Ngoc Pham
 gravatar: 6c1ae5231dcadf6b4297a6ddf6315478?s=80
 linkedin: 'ngctnnnn'
 ---
-Nowadays, COVID-19 situation becomes more and more severe, as well as sophisticated in not only Vietnam but also worldwide. That is why we have to take our actions immediately in order to cope with this pandemic. And the very first step in getting through this pandemic is that we have to rapidly identify COVID-19 cases. Thus, we propose a rapidly testing method which has a high productivity in a short time, which is to use Deep Convolutional Neural Network to detect COVID-19 on Chest X-ray (CXR) images.    
+Propose a rapidly testing method which has a high productivity in a short time, which is to use Deep Convolutional Neural Network to detect COVID-19 on Chest X-ray (CXR) images to cope with the present pandemic.    
 
 ---
 
