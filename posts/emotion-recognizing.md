@@ -1,5 +1,5 @@
 ---
-title: Real-time emotions recognizing
+title: Real-time emotion recognizing
 date: 2021-09-20
 author: Tan Ngoc Pham
 gravatar: 6c1ae5231dcadf6b4297a6ddf6315478?s=80
@@ -7,7 +7,7 @@ linkedin: 'ngctnnnn'
 ---
 Introduce a deep learning approach to the problem of recognizing emotions in real time. 
 <p align="center">
-  <img width=400px height=400px src="../public/demo-emotion-recognizing.png" alt="one-piece-logo">
+  <img width=400px height=400px src="../demo-emotion-recognizing.png" alt="one-piece-logo">
 </p>
 
 ---
@@ -114,7 +114,7 @@ lr_scheduler = ReduceLROnPlateau(
 ```
 The training process is shown as:
 <p align="center">
-  <img src="../public/emo-recog-trainning-process.png" alt="training-process">
+  <img src="../emo-recog-trainning-process.png" alt="training-process">
   <div algin ='center'>
   </div>
 </p>
@@ -132,7 +132,7 @@ model.save_weights("model/vgg-face.h5")
 
 And voilà, here is our final result after training the model.   
 <p align="center">
-  <img src="../public/demo-emotion-recognizing.png" alt="demo-project">
+  <img src="../demo-emotion-recognizing.png" alt="demo-project">
   <div algin ='center'>
   </div>
 </p>
