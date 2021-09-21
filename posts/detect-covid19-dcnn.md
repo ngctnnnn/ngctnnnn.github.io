@@ -8,22 +8,20 @@ linkedin: 'ngctnnnn'
 Propose a rapidly testing method which has a high productivity in a short time, which is to use Deep Convolutional Neural Network to detect COVID-19 on Chest X-ray (CXR) images to cope with the present pandemic.    
 
 ---
-
-Detailed implementation and experiments: [ngctnnnn/Detect-COVID19](https://github.com/ngctnnnn/Detect-COVID19).
-
 ### Table of contents
 1. [Scientific base](#1-scientific-base)
 2. [A deep learning based approach to the problem](#2-a-deep-learning-based-approach-to-the-problem)
 3. [Experimental results and evaluation](#3-experimental-results-and-evaluation)
 
+---
 #### 1. Scientific base
 The most crucial thing that make CXR images from pneumonia or COVID-19 patients different from normal ones is the appearance of white spots, whether they are a lot of or a few, on particular positions along patients' lungs. Those white spots are recognized as the term of ***ground glass opacity*** or GGO in medical science. Ground glass opacity is the incompletely consolidated injury in patients' lungs. It has a higher density in comparison with surrounded parenchyma while still enables us to observe underlying structures, e.g. blood vessels or bronchial membranes.    
 
 <p align="center">
   <img src="../public/covid+pneumonia+normal.png" alt="ground-glass-pattern image">
   <div algin ='center'>
-  <figcaption><b>Fig 1.</b> Representative CXR images for 3 cases</figcaption>
-  <figcaption>COVID-19 (A), Pneumonia (B) and non-respiratory disease (C)</figcaption>
+    <figcaption><b>Fig 1.</b> Representative CXR images for 3 cases</figcaption>
+    <figcaption>COVID-19 (A), Pneumonia (B) and non-respiratory disease (C)</figcaption>
   </div>
 </p>
 
@@ -32,7 +30,8 @@ A specified doctor in the field of diagnostic imaging could tell that those GGO 
 #### 2. A deep learning based approach to the problem
 Throughout the research, we harness the use of 2 different approaches which are <b>ResNet50</b> and <b>VGG19</b> to solve this problem. In addtion, we use [COVIDx dataset](https://github.com/lindawangg/COVID-Net/blob/master/docs/COVIDx.md) - which is a widely used dataset in recent research about COVID-19 nowadays.     
 
-VGG19 is a deep neural network architecture under-using residual design principals, it is also a compact architecture which has a low diversity of architectures. On the other hand, ResNet50 is a deep neural network harnessing residual design principles and it has a moderate diversity of architectures. This network brings many a high productivity in a large number of researching in classifying X-ray images.    
+VGG19 is a deep neural network architecture under-using residual design principals, it is also a compact architecture which has a low diversity of architectures. On the other hand, ResNet50 is a deep neural network harnessing residual design principles and it has a moderate diversity of architectures. This network brings many a high productivity in a large number of researching in classifying X-ray images.
+
 #### 2.1 COVIDx Dataset
 COVIDx Datset is a dataset synthesized from 5 different sources. Additionally, this dataset also provides an image extension transfer tool: from `.mri` into `.jpg`. And the author moreover provide a code to support data pre-processing and getting rid of unnecessary part for synthesized data.    
 
@@ -41,7 +40,17 @@ The dataset consists of more than 20.000 CXR images from different patients and 
 Our model will get an input of one CXR image and will give out an output as the probability of that image falling into each class which is pneumonia, COVID-19 and healthy, respectively.     
 
 #### 2.2 Detailed implementation
-Both deep learning neural network we proposed which are VGG19 and ResNet50 are all pre-trained on [ImageNet](https://www.image-net.org/). Afterwards, we proceed training process on COVIDx dataset with Adam as the optimization algorithm and the learning rate's strategy as reducing if the loss on validation set does not improve at all in a long period (patience). You could refer our full implementation [here](https://github.com/ngctnnnn/Detect-COVID19) on Github.     
+Both deep learning neural network we proposed which are VGG19 and ResNet50 are all pre-trained on [ImageNet](https://www.image-net.org/). Afterwards, we proceed training process on COVIDx dataset with Adam as the optimization algorithm and the learning rate's strategy as reducing if the loss on validation set does not improve at all in a long period (patience).
+
+Detailed implementation: [ngctnnnn/Detect-COVID19](https://github.com/ngctnnnn/Detect-COVID19).     
+
+After implementation, here is my demo for this project:
+
+<div align='center'>
+
+<iframe width="560" height="315" src="../public/demo-covid19.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 
 #### 3. Experimental results and evaluation
 

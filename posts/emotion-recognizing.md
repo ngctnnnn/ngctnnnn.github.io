@@ -5,17 +5,18 @@ author: Tan Ngoc Pham
 gravatar: 6c1ae5231dcadf6b4297a6ddf6315478?s=80
 linkedin: 'ngctnnnn'
 ---
-
 Introduce a deep learning approach to the problem of recognizing emotions in real time. 
+<p align="center">
+  <img width=400px height=400px src="../public/demo-emotion-recognizing.png" alt="one-piece-logo">
+</p>
 
 ---
-Detailed implementation here: [ngctnnnn/RealTime-Emotion-Recognizer](https://github.com/ngctnnnn/RealTime-Emotion-Recognizer)
-
 #### Table of contents
 1. [Introduction](#1-introduction)
 2. [Dataset](#2-dataset)
 3. [Proposed architecture](#3-proposed-architecture)
 
+---
 #### 1. Introduction
 There is a large number of neural networks nowadays to help us in almost every aspect of our life. In addition, we realize that different problems often require different types of networks. In this problem, I choose to use VGGFace network, or it is also called as Deep Face architecture.  
 
@@ -43,13 +44,97 @@ The originally proposed VGGFace architecture was shown as:
   </div>
 </p>
 
-However, i did some minor change in the original architecture to give out a better performance to my own problem. In details, there is an extra layer after the second one and an extra dense layer in the fully connected one. Additionally, i also reduce learning rate with a factor of 0.5 once 7 continuous epochs do not improve their performance; and an early stopping once the performance does not improve in 7 consecutive epochs.   
+However, i did some minor change in the original architecture to give out a better performance to my own problem. In details, there is an extra layer after the second one, an extra dense layer in the fully connected one, the activation function utilized is [ReLU](https://www.mygreatlearning.com/blog/relu-activation-function/) and some dropout layer.        
 
-The detailed model is shown here: [VGGFace](https://github.com/GDSC2021/RealTime-Emotion-Recognizer/blob/main/build_model/vgg_face.py).   
+The detailed model is shown as:
+```python
+''' First layer '''
+model.add(Conv2D(filters=64, kernel_size=(5,5),
+                input_shape=(img_width, img_height, img_depth), 
+                activation='relu', padding='same',
+                kernel_initializer='he_normal'))
+model.add(BatchNormalization())
+model.add(Conv2D(filters=64, kernel_size=(5,5),
+                activation='relu', padding='same',
+                kernel_initializer='he_normal'))
+model.add(BatchNormalization())
+model.add(MaxPool2D(pool_size=(2,2)))
+model.add(Dropout(0.5))
 
-Here is the final result after training the model.   
+''' Second layer '''
+model.add(Conv2D(filters=128, kernel_size=(3,3),
+                activation='relu', padding='same',
+                kernel_initializer='he_normal'))
+model.add(BatchNormalization())
+model.add(Conv2D(filters=128, kernel_size=(3,3),
+                activation='relu', padding='same',
+                kernel_initializer='he_normal'))
+model.add(BatchNormalization())
+model.add(MaxPool2D(pool_size=(2,2)))
+model.add(Dropout(0.5))
+
+''' Extra layer '''
+model.add(Conv2D(filters=256, kernel_size=(3,3),
+                activation='relu', padding='same',
+                kernel_initializer='he_normal'))
+model.add(BatchNormalization())
+model.add(Conv2D(filters=256, kernel_size=(3,3),
+                activation='relu', padding='same',
+                kernel_initializer='he_normal'))
+model.add(BatchNormalization())
+model.add(MaxPool2D(pool_size=(2,2)))
+model.add(Dropout(0.5))
+
+''' Fully connected layer '''
+model.add(Flatten())
+model.add(Dense(128,activation='relu',kernel_initializer='he_normal'))
+model.add(BatchNormalization())
+model.add(Dropout(0.6))
+model.add(Dense(num_classes,activation='softmax'))
+```
+
+Additionally, i also create a callback with a demonstration as: the learning rate would reduce with a factor of 0.5 once 7 continuous epochs do not improve their performance; and an early stopping is set once the performance does not improve in 7 consecutive epochs.    
+
+```python
+early_stopping = EarlyStopping(
+    monitor='val_accuracy',
+    min_delta=0.00005,
+    patience=11,
+    verbose=1,
+    restore_best_weights=True,
+)
+
+lr_scheduler = ReduceLROnPlateau(
+    monitor='val_accuracy',
+    factor=0.5,
+    patience=7,
+    min_lr=1e-7,
+    verbose=1,
+)
+```
+The training process is shown as:
+<p align="center">
+  <img src="../public/emo-recog-trainning-process.png" alt="training-process">
+  <div algin ='center'>
+  </div>
+</p>
+
+We can notice our model just has to go through 43 epochs before coming to the early convergence.     
+
+Moreover, since this model is rather huge and we can not use the whole model to predict in such a limited time when we harness our model in real-time. I would save the weights from model into a json model, and in main program, we just have to load our weights in the json only.
+
+```python
+fer_json = model.to_json()
+with open("model/vgg-face-model.json", "w") as json_file:
+    json_file.write(fer_json)
+model.save_weights("model/vgg-face.h5")
+```
+
+And voilà, here is our final result after training the model.   
 <p align="center">
   <img src="../public/demo-emotion-recognizing.png" alt="demo-project">
   <div algin ='center'>
   </div>
 </p>
+
+Detailed implementation here: [ngctnnnn/RealTime-Emotion-Recognizer](https://github.com/ngctnnnn/RealTime-Emotion-Recognizer)

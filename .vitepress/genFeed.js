@@ -5,8 +5,8 @@ const { getPosts } = require('./genMetadata')
 const url = `https://blog.vuejs.org`
 
 const feed = new Feed({
-  title: 'The ngctnnnn space',
-  description: 'The offical technical blog of Tan Ngoc Pham',
+  title: 'A technical blog',
+  description: 'The offical technical blog by Tan Ngoc Pham',
   id: url,
   link: url,
   language: 'en',
