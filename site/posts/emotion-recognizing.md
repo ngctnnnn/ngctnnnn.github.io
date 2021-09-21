@@ -7,7 +7,7 @@ linkedin: 'ngctnnnn'
 ---
 Introduce a deep learning approach to the problem of recognizing emotions in real time. 
 <p align="center">
-  <img width=400px height=400px src="../demo-emotion-recognizing.png" alt="demo-emotion-recognize">
+  <img width=400px height=400px src="/demo-emotion-recognizing.png" alt="one-piece-logo">
 </p>
 
 ---
@@ -114,7 +114,7 @@ lr_scheduler = ReduceLROnPlateau(
 ```
 The training process is shown as:
 <p align="center">
-  <img src="../emo-recog-trainning-process.png" alt="training-process">
+  <img src="/emo-recog-trainning-process.png" alt="training-process">
   <div algin ='center'>
   </div>
 </p>
@@ -132,7 +132,7 @@ model.save_weights("model/vgg-face.h5")
 
 And voilà, here is our final result after training the model.   
 <p align="center">
-  <img src="../demo-emotion-recognizing.png" alt="demo-project">
+  <img src="/demo-emotion-recognizing.png" alt="demo-project">
   <div algin ='center'>
   </div>
 </p>

@@ -1,7 +1,0 @@
-node_modules
-# dist
-posts/hello-2021.md
-posts/vue-3-one-piece.md
-package-lock.json
-yarn.lock
-# .vitepress/metadata.json

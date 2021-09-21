@@ -18,7 +18,7 @@ Propose a rapidly testing method which has a high productivity in a short time, 
 The most crucial thing that make CXR images from pneumonia or COVID-19 patients different from normal ones is the appearance of white spots, whether they are a lot of or a few, on particular positions along patients' lungs. Those white spots are recognized as the term of ***ground glass opacity*** or GGO in medical science. Ground glass opacity is the incompletely consolidated injury in patients' lungs. It has a higher density in comparison with surrounded parenchyma while still enables us to observe underlying structures, e.g. blood vessels or bronchial membranes.    
 
 <p align="center">
-  <img src="../public/covid+pneumonia+normal.png" alt="ground-glass-pattern image">
+  <img src="/covid+pneumonia+normal.png" alt="ground-glass-pattern image">
   <div algin ='center'>
     <figcaption><b>Fig 1.</b> Representative CXR images for 3 cases</figcaption>
     <figcaption>COVID-19 (A), Pneumonia (B) and non-respiratory disease (C)</figcaption>
