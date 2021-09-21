@@ -7,7 +7,7 @@ linkedin: 'ngctnnnn'
 ---
 Introduce a deep learning approach to the problem of recognizing emotions in real time. 
 <p align="center">
-  <img width=400px height=400px src="../demo-emotion-recognizing.png" alt="one-piece-logo">
+  <img width=400px height=400px src="../demo-emotion-recognizing.png" alt="demo-emotion-recognize">
 </p>
 
 ---
