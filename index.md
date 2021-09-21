@@ -1,4 +1,4 @@
 ---
 title: A technical blog 
-subtext: Machine Learning, Deep Learning
+subtext: Machine Learning, Deep Learning, Applied Mathematics
 ---
