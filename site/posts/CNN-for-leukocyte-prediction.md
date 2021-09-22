@@ -19,17 +19,17 @@ While blood cells (WBC), also known as leukocytes, are produced in the bone marr
 |------|-------|-------------| 
 | Neutrophils  | None | Its role is to reach the place of the microbial invasion, to phagocytize and to destry the invading organism. |
 | Eosinophils  | None | Part of the defense mechanism against parasitic infections, inflammatory processes and allergic tissue reactions. |
-| Basophils    | None | They play a role in the states involed in allergic and immediate hypersensitivity reactions.| 
+| Basophils    | None | They play a role in the states involved in allergic and immediate hypersensitivity reactions.| 
 | Monocytes    | None | Involved in defensive reactions to some microorganisms, remove damaged cells and cell debris. They have a bactericidal action as immune reaction| 
 | Lymphocytes  | None | The lymphocytes produce antibodies and are involved in immune reactions| 
 
-#### 2. Dataset and data preprocessing 
+#### 2. Dataset and data preprocessing
 The [LISC - *Leukocyte Images for Segmentation and Classification*](http://users.cecs.anu.edu.au/~hrezatofighi/Data/Leukocyte%20Data.htm) is used for automatic identification and blood cells counting.
  
+#### 3. Foreground and background segmentation technique
 
+#### 4. Edge detection using Canny method
 
-#### 3. Scientific base
+#### 5. Hough transform to identify blood cells borderlines
 
-#### 4. Model construction
-
-#### 5. References
+#### 6. References

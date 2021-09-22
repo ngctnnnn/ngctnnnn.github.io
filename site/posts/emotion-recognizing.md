@@ -34,7 +34,7 @@ With that reason in mind, i think that VGGFace would perform well on other probl
 The data using in this research is taken from [Kaggle's FER-2013](https://www.kaggle.com/msambare/fer2013). 
 > The data consists of 48x48 pixel grayscale images of faces. The faces have been automatically registered so that the face is more or less centred and occupies about the same amount of space in each image. The task is to categorize each face based on the emotion shown in the facial expression into one of seven categories (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). The training set consists of 28,709 examples and the public test set consists of 3,589 examples.
 
-However, in order to get a sufficient data for my model training, as well as avoiding inbalance between data classes, i just take out 3 most important emotions which are happy, sad and neutral. I also get rid of the testing phase due to the limitation in data. The training set is splitted into 2 smaller sets, which are training set (80%) and validation set (20%).
+However, in order to get a sufficient data for my model training, as well as avoiding imbalance between data classes, i just take out 3 most important emotions which are happy, sad and neutral. I also get rid of the testing phase due to the limitation in data. The training set is divided into 2 smaller sets, which are training set (80%) and validation set (20%).
 
 #### 3. Proposed architecture
 The originally proposed VGGFace architecture was shown as:
