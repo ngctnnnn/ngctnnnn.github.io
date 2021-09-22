@@ -1,0 +1,35 @@
+---
+title: Leukocyte classification to predict diseases
+date: 2021-09-22
+author: Dzung Tri Bui
+gravatar: 9d7fdd037b40f9d989d82eac5c97dd33?s=80 
+linkedin: 'BTrDung'
+---
+Data analysis on number of blood cells, which are white blood cells and red blood cells in details, per a certain blood volume could help us observe our medical situation. In this blog, we introduce a faster method to recognize disease via the number of leukocytes.
+
+---
+#### Table of contents
+
+---
+#### 1. Introduction
+
+While blood cells (WBC), also known as leukocytes, are produced in the bone marrow and composed of nuclei and cytoplasm. WBCs are divided into five groups: basophil, eosinophil, lymphocyte, monocyte and neutrophil. Leukocytes protects the body against infectious disease and foreign substance, constitute an important part of the immune system. 4.1e9 to 11.1e9 units in one liter of a healthy adult human is the normal number of WBCs in a blood is 4,500 to 11,000 WBCs per microliter and a drop in a blood is 7,000 to 25,000. 
+
+| Name | Image | Description | 
+|------|-------|-------------| 
+| Neutrophils  | None | Its role is to reach the place of the microbial invasion, to phagocytize and to destry the invading organism. |
+| Eosinophils  | None | Part of the defense mechanism against parasitic infections, inflammatory processes and allergic tissue reactions. |
+| Basophils    | None | They play a role in the states involed in allergic and immediate hypersensitivity reactions.| 
+| Monocytes    | None | Involved in defensive reactions to some microorganisms, remove damaged cells and cell debris. They have a bactericidal action as immune reaction| 
+| Lymphocytes  | None | The lymphocytes produce antibodies and are involved in immune reactions| 
+
+#### 2. Dataset and data preprocessing 
+The [LISC - *Leukocyte Images for Segmentation and Classification*](http://users.cecs.anu.edu.au/~hrezatofighi/Data/Leukocyte%20Data.htm) is used for automatic identification and blood cells counting.
+ 
+
+
+#### 3. Scientific base
+
+#### 4. Model construction
+
+#### 5. References
