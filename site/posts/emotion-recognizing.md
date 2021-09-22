@@ -15,6 +15,7 @@ Introduce a deep learning approach to the problem of recognizing emotions in rea
 1. [Introduction](#1-introduction)
 2. [Dataset](#2-dataset)
 3. [Proposed architecture](#3-proposed-architecture)
+4. [References](#4-references)
 
 ---
 #### 1. Introduction
@@ -137,3 +138,7 @@ And voilà, here is our final result after training the model and you can see it
 </p>
 
 Detailed implementation here: [ngctnnnn/RealTime-Emotion-Recognizer](https://github.com/ngctnnnn/RealTime-Emotion-Recognizer)
+
+#### 4. References
+[1] Qawaqneh et al. (2017). Deep convolutional neural network for age estimation based on VGG-face model. *arXiv:1709.01664*.          
+[2] I. J. Goodfellow et al. Challenges in representation learning: A report on three machine learning contests. *Neural Networks, 64:59--63, 2015. Special Issue on "Deep Learning of Representations"*.           
