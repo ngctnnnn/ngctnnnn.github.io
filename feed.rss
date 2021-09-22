@@ -4,7 +4,7 @@
         <title>A technical blog</title>
         <link>https://blog.vuejs.org</link>
         <description>The offical technical blog by Tan Ngoc Pham</description>
-        <lastBuildDate>Wed, 22 Sep 2021 05:13:48 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Sep 2021 06:31:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -13,16 +13,6 @@
             <url>https://vuejs.org/images/logo.png</url>
             <link>https://blog.vuejs.org</link>
         </image>
-        <item>
-            <title><![CDATA[Leukocyte classification to predict diseases]]></title>
-            <link>https://blog.vuejs.org/posts/CNN-for-leukocyte-prediction.html</link>
-            <guid>https://blog.vuejs.org/posts/CNN-for-leukocyte-prediction.html</guid>
-            <pubDate>Wed, 22 Sep 2021 12:00:00 GMT</pubDate>
-            <description><![CDATA[The power of applied computer vision has been proved to be extraordinarily effective on many fields and medical is one of those. In this research Convolutional Neural Network is utilized as a tool to predict diseases via classifying blood cells to count leukocyte in the respiratory system.
-
-]]></description>
-            <content:encoded><![CDATA[<div><p>The power of applied computer vision has been proved to be extraordinarily effective on many fields and medical is one of those. In this research Convolutional Neural Network is utilized as a tool to predict diseases via classifying blood cells to count leukocyte in the respiratory system.</p><hr><h4 id="table-of-contents" tabindex="-1">Table of contents <a class="header-anchor" href="#table-of-contents" aria-hidden="true">#</a></h4><hr><h4 id="_1-introduction" tabindex="-1">1. Introduction <a class="header-anchor" href="#_1-introduction" aria-hidden="true">#</a></h4><p>While blood cells (WBC), also called leukocytes which one are produced in the bone marrow and composed of nuclei and cytoplasm. WBCs are divided into five groups: basophil, eosinophil, lymphocyte, monocyte and neutrophil. Leukocytes protects the body against infectious disease and foreign substanse, consitute an important part of the immune system. 4.1e9 to 11.1e9 units in one liter of a healthy adult human that is the normal number of WBCs in a blood is 4,500 to 11,000 WBCs per microliter and a drop in a blood is 7,000 to 25,000.</p><h4 id="_2-dataset" tabindex="-1">2. Dataset <a class="header-anchor" href="#_2-dataset" aria-hidden="true">#</a></h4><p>The <a href="http://users.cecs.anu.edu.au/~hrezatofighi/Data/Leukocyte%20Data.htm" target="_blank" rel="noopener noreferrer">LISC - <em>Leukocyte Images for Segmentation and Classification</em></a> has been used for automatic identification and counting of blood cells</p><p>In</p><h4 id="_3-scientific-base" tabindex="-1">3. Scientific base <a class="header-anchor" href="#_3-scientific-base" aria-hidden="true">#</a></h4><h4 id="_4-model-construction" tabindex="-1">4. Model construction <a class="header-anchor" href="#_4-model-construction" aria-hidden="true">#</a></h4><h4 id="_5-references" tabindex="-1">5. References <a class="header-anchor" href="#_5-references" aria-hidden="true">#</a></h4></div>]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[Real-time emotion recognizing]]></title>
             <link>https://blog.vuejs.org/posts/emotion-recognizing.html</link>
