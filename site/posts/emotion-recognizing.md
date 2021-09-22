@@ -130,11 +130,10 @@ with open("model/vgg-face-model.json", "w") as json_file:
 model.save_weights("model/vgg-face.h5")
 ```
 
-And voilà, here is our final result after training the model.   
+And voilà, here is our final result after training the model and you can see its performance exceeds our expectation. 
 <p align="center">
-  <img src="/demo-emotion-recognizing.png" alt="demo-project">
-  <div algin ='center'>
-  </div>
+  <img src="/emo-detect-demo.png" width=80% alt="demo-project">
+
 </p>
 
 Detailed implementation here: [ngctnnnn/RealTime-Emotion-Recognizer](https://github.com/ngctnnnn/RealTime-Emotion-Recognizer)
