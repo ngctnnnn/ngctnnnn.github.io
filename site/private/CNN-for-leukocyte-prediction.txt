@@ -15,6 +15,15 @@ The power of applied computer vision has been proved to be extraordinarily effec
 
 While blood cells (WBC), also called leukocytes which one are produced in the bone marrow and composed of nuclei and cytoplasm. WBCs are divided into five groups: basophil, eosinophil, lymphocyte, monocyte and neutrophil. Leukocytes protects the body against infectious disease and foreign substanse, consitute an important part of the immune system. 4.1e9 to 11.1e9 units in one liter of a healthy adult human that is the normal number of WBCs in a blood is 4,500 to 11,000 WBCs per microliter and a drop in a blood is 7,000 to 25,000. 
 
+** Neutrophils ** 
+Its role is to reach the place of the microbial invasion, to phagocytize and to destruy the invading organism. 
+
+** Eosinophils **
+Part of the defense mechnism against parasitic infections, inflammatory process and allergic tissue reactions.
+
+** Basophils ** 
+They play a role in the states involved in allergic and immediate hypersensitivity reactions. 
+
 #### 2. Dataset 
 
 The [LISC - *Leukocyte Images for Segmentation and Classification*](http://users.cecs.anu.edu.au/~hrezatofighi/Data/Leukocyte%20Data.htm) has been used for automatic identification and counting of blood cells
