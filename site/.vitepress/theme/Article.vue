@@ -78,34 +78,28 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
           xl:col-start-1 xl:row-start-2
         "
         style="
-        display: inline-flex; justify-content: space-between;
+        display: inline-flex; justify-content: space-between; width: 100%
         "
       >
-
         <div v-if="prevPost" class="py-8">
-            
-            <h2 class="text-xs tracking-wide uppercase text-gray-500">
-              Previous Article
-            </h2>
-            <div class="link">
-              <a :href="prevPost.href">{{ prevPost.title }}</a>
-            </div>
-
-            <h2 class="text-xs tracking-wide uppercase text-gray-500">
-              Next Article
-            </h2>
-            <div class="link-next">
-              <a :href="nextPost.href">{{ nextPost.title }}</a>
-            </div>
-
+          <h2 class="text-xs tracking-wide uppercase text-gray-500">
+            Previous Article
+          </h2>
+          <div class="link">
+            <a :href="prevPost.href">{{ prevPost.title }}</a>
           </div>
-        <!-- <div v-if="nextPost" class="py-8">
-          
-        </div> -->
+        </div>
+
+       <div v-if="nextPost" class="py-8">
+          <h2 class="text-xs tracking-wide uppercase text-gray-500">
+            Next Article
+          </h2>
+          <div class="link">
+            <a :href="nextPost.href">{{ nextPost.title }}</a>
+          </div>
+        </div>
         
-        <!-- <div class="pt-8">
-          <a class="link" href="/">← Back to the blog</a>
-        </div> -->
+
       </footer>
   </article>
 </template>
