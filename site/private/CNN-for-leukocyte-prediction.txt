@@ -15,14 +15,13 @@ The power of applied computer vision has been proved to be extraordinarily effec
 
 While blood cells (WBC), also called leukocytes which one are produced in the bone marrow and composed of nuclei and cytoplasm. WBCs are divided into five groups: basophil, eosinophil, lymphocyte, monocyte and neutrophil. Leukocytes protects the body against infectious disease and foreign substanse, consitute an important part of the immune system. 4.1e9 to 11.1e9 units in one liter of a healthy adult human that is the normal number of WBCs in a blood is 4,500 to 11,000 WBCs per microliter and a drop in a blood is 7,000 to 25,000. 
 
-** Neutrophils ** 
-Its role is to reach the place of the microbial invasion, to phagocytize and to destruy the invading organism. 
-
-** Eosinophils **
-Part of the defense mechnism against parasitic infections, inflammatory process and allergic tissue reactions.
-
-** Basophils ** 
-They play a role in the states involved in allergic and immediate hypersensitivity reactions. 
+| Name | Image | Description | 
+|------|-------|-------------| 
+| Neutrophils  | None | Its role is to reach the place of the microbial invasion, to phagocytize and to destry the invading organism. |
+| Eosinophils  | None | Part of the defense mechanism against parasitic infections, inflammatory processes and allergic tissue reactions. |
+| Basophils    | None | They play a role in the states involed in allergic and immediate hypersensitivity reactions.| 
+| Monocytes    | None | Involed in defensive reactions to some microorganisms, remove damaged cells and cell debris. Thay have a bactericidal action as immune reaction| 
+| Lymphocytes  | None | The lymphocytes produce antibodies and are involved in immune reations| 
 
 #### 2. Dataset 
 
