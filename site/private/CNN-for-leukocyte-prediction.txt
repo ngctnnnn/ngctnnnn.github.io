@@ -19,7 +19,7 @@ While blood cells (WBC), also called leukocytes which one are produced in the bo
 
 The [LISC - *Leukocyte Images for Segmentation and Classification*](http://users.cecs.anu.edu.au/~hrezatofighi/Data/Leukocyte%20Data.htm) has been used for automatic identification and counting of blood cells
  
-In 
+
 
 #### 3. Scientific base
 
