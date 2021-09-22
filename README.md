@@ -1,6 +1,10 @@
 <div align='center'>
 
-# My technical blog
+## My technical blog
 </div>
 
-Write a `markdown` file in the `posts` folder
+### Visit my website as: [ngctnnnn.github.io](https://ngctnnnn.github.io)
+### Contribution is open for every one
+- Fork this repo
+- Write a `markdown` file in the `site/posts` folder
+- Create a pull request
