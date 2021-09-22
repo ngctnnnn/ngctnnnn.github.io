@@ -48,7 +48,7 @@ After implementation, here is my demo for this project:
 
 <div align='center'>
 
-<iframe width="560" height="315" src="../public/demo-covid19.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="/demo-covid19.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 
