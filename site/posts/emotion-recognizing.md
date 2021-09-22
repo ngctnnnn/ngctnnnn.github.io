@@ -140,5 +140,6 @@ And voilà, here is our final result after training the model and you can see it
 Detailed implementation here: [ngctnnnn/RealTime-Emotion-Recognizer](https://github.com/ngctnnnn/RealTime-Emotion-Recognizer)
 
 #### 4. References
-[1] Qawaqneh et al. (2017). Deep convolutional neural network for age estimation based on VGG-face model. *arXiv:1709.01664*.          
+[1] Qawaqneh et al. (2017). Deep convolutional neural network for age estimation based on VGG-face model. *arXiv:1709.01664*.      
+    
 [2] I. J. Goodfellow et al. Challenges in representation learning: A report on three machine learning contests. *Neural Networks, 64:59--63, 2015. Special Issue on "Deep Learning of Representations"*.           

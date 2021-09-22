@@ -106,12 +106,20 @@ After implementation, here is my demo for this project:
 <div align='center'><b>Table 6. </b>Comparison between precision and number of parameters among models</div>
 
 #### 4. References
-[1] A. Chung.  *Actualmed covid-19 chest x-ray data initiative*, 2020, URL: [https://ncov.moh.gov.vn](https://github.com/agchung/Actualmed-COVID-chestxray-dataset).        
-[2] J. P. Cohen et al. *Covid-19 image data collection*, 2020.       
+[1] A. Chung.  *Actualmed covid-19 chest x-ray data initiative*, 2020, URL: [https://ncov.moh.gov.vn](https://github.com/agchung/Actualmed-COVID-chestxray-dataset).       
+
+[2] J. P. Cohen et al. *Covid-19 image data collection*, 2020.    
+
 [3] J. Deng et al. *Imagenet: A large-scale hierarchicalimage database*. In2009 IEEE conference on computer vision and pattern recognition, pages 248–255.Ieee, 2009.        
-[4] K. He et al. *Deep residual learning for image recognition*, 2015.        
+
+[4] K. He et al. *Deep residual learning for image recognition*, 2015.    
+
 [5] Ministry of Health of Vietnam. *A page about acute respiratory tract infections covid-19*, 2021. URL: [https://ncov.moh.gov.vn](https://ncov.moh.gov.vn).        
+
 [6] Radiological Society of North America. *Covid-19 radiography database*, 2019. URL: [https://www.kaggle.com/tawsifurrahman/covid19-radiography-database](https://www.kaggle.com/tawsifurrahman/covid19-radiography-database).      
+
 [7] Radiological Society of North America. *RSNA pneumonia detection challenge*, 2019. URL: [https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data).        
+
 [8] K. Simonyan and A. Zisserman. *Very deep convolutional networks for large-scale image recognition*, 2015.      
+
 [9] L. Wang, Z. Q. Lin, and A. Wong. *Covid-net: a tailored deep convolutional neural network de-sign for detection of covid-19 cases from chest x-ray images.Scientific Reports*, 10(1):19549,Nov 2020. ISSN 2045-2322. doi: 10.1038/s41598-020-76550-z. URL: [https://doi.org/10.1038/s41598-020-76550-z](https://doi.org/10.1038/s41598-020-76550-z).       
