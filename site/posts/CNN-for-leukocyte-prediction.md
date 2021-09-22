@@ -1,7 +1,7 @@
 ---
 title: Leukocyte classification to predict diseases
 date: 2021-09-22
-author: Dzung Tri Bui
+author: Dzung Tri Bui, Tan Ngoc Pham
 gravatar: 9d7fdd037b40f9d989d82eac5c97dd33?s=80 
 linkedin: 'BTrDung'
 
@@ -49,6 +49,19 @@ gray_img = cv2.cvtColor(original_img, cv2.COLOR_BGR2GRAY)
 ```
 And after using opencv, we can change a normal leukocyte into a grayscale leukocyte.
 
+<div align='center' id='banner' style='display: flex; justify-content: space-between'>
+<div>
+<img width=70% src="https://github.com/BTrDung/Complex/raw/master/CreProjCBC/4.bmp" alt='leukocyte-before'>
+</div>
+<div>
+<img width=40% src='/grayscale-leukocyte.png' alt='leukocyte-after'>
+</div>
+</div>
+
+<div align='center'>
+<b>Fig 1.</b> Image of a normal leukocyte before and after using opencv 
+</div>
+
 #### 3. Foreground and background segmentation technique
 
 Before diving in details, let make an overview about the image mentioned below.    
@@ -57,7 +70,7 @@ Before diving in details, let make an overview about the image mentioned below.
   <img src="https://webpath.med.utah.edu/jpeg5/HEME005.jpg" alt="basophil">
   <div algin ='center'>
     <figcaption>
-    <b>Fig 1.</b> 
+    <b>Fig 2.</b> 
     The basophil in the centre has a multi-lobed nucleus</figcaption> 
     <figcaption>
     and numerous coarse, dark blue granules in the cytoplasm.
