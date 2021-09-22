@@ -5,8 +5,8 @@ require('./genMetadata').watchPosts()
  * @type {import('vitepress').UserConfig}
  */
 module.exports = {
-  title: 'The Vue Point',
-  description: 'The offical blog',
+  title: 'A technical blog',
+  description: 'The official blog',
   head: [
     [
       'link',

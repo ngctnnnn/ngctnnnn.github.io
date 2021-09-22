@@ -23,9 +23,18 @@ p img {
   color: var(--c-brand);
 }
 
+.link-next{
+  color: var(--c-brand);
+}
+
 .link:hover {
   color: var(--c-brand-light);
 }
+
+.link-next:hover {
+  color: var(--c-brand-light);
+}
+
 
 .header-anchor {
   display: none;
