@@ -11,16 +11,16 @@ Data analysis on number of blood cells, which are white blood cells and red bloo
 ---
 #### Table of contents
 - [Part 1](https://ngctnnnn.github.io/posts/computer-vision-for-leukocyte-prediction.html)
-    - 1. [Introduction](#1-introduction)
-    - 2. [Dataset and data preprocessing](#2-dataset-and-data-preprocessing)
-    - 3. [Foreground and background segmentation technique](#3-foreground-and-background-segmentation-technique)            
+    - 1. [Introduction](https://ngctnnnn.github.io/posts/computer-vision-for-leukocyte-prediction.html#:~:text=1.%20Introduction)
+    - 2. [Dataset and data preprocessing](https://ngctnnnn.github.io/posts/computer-vision-for-leukocyte-prediction.html#:~:text=2.%20Dataset%20and%20data%20preprocessing)
+    - 3. [Foreground and background segmentation technique](https://ngctnnnn.github.io/posts/computer-vision-for-leukocyte-prediction.html#:~:text=3.%20Foreground%20and%20background%20segmentation%20technique)            
 - [Part 2](https://ngctnnnn.github.io/posts/computer-vision-for-leukocyte-prediction-2.html)
-    - 4. [Edge detection with Canny method](#4-edge-detection-with-Canny-method)
-    - 5. [Hough transformation to identify blood cells borderlines](#5-hough)
-    - 6. [References](#6-references)
+    - 4. [Edge detection with Canny method](#:~:text=4.%20Edge%20detection%20with%20Canny%20method)
+    - 5. [Hough transformation to identify blood cells borderlines](#:~:text=5.%20Hough%20transformation%20to%20identify%20blood%20cells%20borderlines)
+    - 6. [References](#:~:text=6.%20References)
 ---
 
-#### 4. Edge detection using Canny method
+#### 4. Edge detection with Canny method
 
 This method uses both high and low as 2 separated thresholds. The high one would be used firstly to find the starting point of the edge. After that, we determine the path direction of the border based on consecutive pixels having a greater value in comparison of the low. Points with the values less than the low threshold are removed only. Tiny borders will be selected if they are associated with large (easy to see) borders. The Canny procedure is demonstrated as follows:
 

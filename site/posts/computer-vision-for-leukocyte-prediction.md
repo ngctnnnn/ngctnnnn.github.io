@@ -14,13 +14,13 @@ Since this blog is rather long, we divide it into 2 parts, the first one is to i
 
 #### Table of contents
 - [Part 1](https://ngctnnnn.github.io/posts/computer-vision-for-leukocyte-prediction.html)
-    - 1. [Introduction](#1-introduction)
-    - 2. [Dataset and data preprocessing](#2-dataset-and-data-preprocessing)
-    - 3. [Foreground and background segmentation technique](#3-foreground-and-background-segmentation-technique)            
+    - 1. [Introduction](#:~:text=1.%20Introduction)
+    - 2. [Dataset and data preprocessing](#:~:text=2.%20Dataset%20and%20data%20preprocessing)
+    - 3. [Foreground and background segmentation technique](#:~:text=3.%20Foreground%20and%20background%20segmentation%20technique)            
 - [Part 2](https://ngctnnnn.github.io/posts/computer-vision-for-leukocyte-prediction-2.html)
-    - 4. [Edge detection with Canny method](#4-edge-detection-with-Canny-method)
-    - 5. [Hough transformation to identify blood cells borderlines](#5-hough)
-    - 6. [References](#6-references)
+    - 4. [Edge detection with Canny method](https://ngctnnnn.github.io/posts/computer-vision-for-leukocyte-prediction-2.html#:~:text=4.%20Edge%20detection%20with%20Canny%20method)
+    - 5. [Hough transformation to identify blood cells borderlines](https://ngctnnnn.github.io/posts/computer-vision-for-leukocyte-prediction-2.html#:~:text=5.%20Hough%20transformation%20to%20identify%20blood%20cells%20borderlines)
+    - 6. [References](https://ngctnnnn.github.io/posts/computer-vision-for-leukocyte-prediction-2.html#:~:text=6.%20References)
 
 ---
 #### 1. Introduction

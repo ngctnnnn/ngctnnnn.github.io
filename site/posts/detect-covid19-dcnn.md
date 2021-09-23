@@ -9,10 +9,10 @@ Propose a rapidly testing method which has a high productivity in a short time, 
 
 ---
 ### Table of contents
-1. [Scientific base](#1-scientific-base)
-2. [A deep learning based approach to the problem](#2-a-deep-learning-based-approach-to-the-problem)
-3. [Experimental results and evaluation](#3-experimental-results-and-evaluation)
-4. [References](#4-references)
+1. [Scientific base](#:~:text=1.%20Scientific%20base)
+2. [A deep learning based approach to the problem](#:~:text=2.%20A%20deep%20learning%20based%20approach%20to%20the%20problem)
+3. [Experimental results and evaluation](#:~:text=3.%20Experimental%20results%20and%20evaluation)
+4. [References](#:~:text=4.%20References)
 
 ---
 #### 1. Scientific base
