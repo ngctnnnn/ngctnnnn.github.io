@@ -3,7 +3,7 @@
 ## A technical blog project
 </div> 
 
-A technical project @ ngctnnnn is a blogging site to share technical knowledge about ML, DL, Applied Mathematics and more !
+A technical project @ ngctnnnn is a blogging site to share technical knowledge about **Machine Learning**, **Deep Learning**, **Applied Mathematics** and more !
 
 --- 
 
