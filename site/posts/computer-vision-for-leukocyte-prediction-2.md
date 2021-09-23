@@ -1,6 +1,6 @@
 ---
 title: Leukocyte classification to predict diseases (Part 2)
-date: 2021-09-24
+date: 2021-09-23
 author: Dzung Tri Bui 
 gravatar: 9d7fdd037b40f9d989d82eac5c97dd33?s=80 
 linkedin: 'BTrDung'
@@ -34,9 +34,9 @@ This method uses both high and low as 2 separated thresholds. The high one would
 
 This method is considered as more superior to other methods because it is less affected by noises and it is also able to detect weak edges. On the other hand, if the threshold is chosen too low, the boundary will be incorrect, or if the threshold is chosen too high, much of the important information about the boundary will be discarded. Based on the predefined threshold level, it will decide which points belong to the true boundary or not to the boundary. The lower the threshold level, the more edges are detected (but also noise and false edges appear). Conversely, if the threshold level is set higher, the fuzzy borders may be lost, or the borders will be broken.
 
-#### 5. Hough transform to identify blood cells borderlines    
+#### 5. Hough transformation to identify blood cells borderlines    
 
-The Hough transform method is one of the basic methods for feature extraction in image processing, and especially one of its capabilities is to find and detect circles in images (even imperfect circles).
+Hough transformation is one of the most basic methods for feature extraction in image processing, and especially one of its capabilities is to find and detect circles in images (even imperfect circles).
 
 This method mainly relies on the parameter accumulator after being added up (called “voting”) to get the maximum values. We will identify objects that are supposed to be circular in image with the following formula:
 

@@ -14,10 +14,10 @@
         <div class="text-base text-gray-500 leading-5">
           <a
             class="hover:text-gray-700"
-            href="https://linkedin.com/in/ngctnnnn"
+            href="https://github.com/ngctnnnn/ngctnnnn.github.io/blob/main/README.md"
             target="_blank"
             rel="noopener"
-            >About the author</a
+            >About us</a
           >
         </div>
       </nav>
