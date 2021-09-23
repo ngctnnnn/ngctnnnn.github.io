@@ -22,19 +22,17 @@ Data analysis on number of blood cells, which are white blood cells and red bloo
 
 #### 4. Edge detection using Canny method
 
-This method uses two threshold levels high and low. We will first use the high threshold to find the starting point of the edge, then determine the path direction of the border based on consecutive pixels that have a value greater than the low threshold. Only remove points with values less than the low threshold. Tiny borders will be selected if they are associated with large (easy to see) borders. The Canny method includes the following steps:
+This method uses both high and low as 2 separated thresholds. The high one would be used firstly to find the starting point of the edge. After that, we determine the path direction of the border based on consecutive pixels having a greater value in comparison of the low. Points with the values less than the low threshold are removed only. Tiny borders will be selected if they are associated with large (easy to see) borders. The Canny procedure is demonstrated as follows:
 
-- Step 1: Use a Gaussian filter to smoothen the image. This step is meant to reduce the gradient of pixels when moving from one pixel to another and make the image smoother than the original.
+- **Step 1**: Use a Gaussian filter to smoothen the image. This step is meant to reduce the gradient of pixels while moving from one pixel to another and make the image smoother than the original.
 
-- Step 2: Then calculate the gradient of the contour of the smoothed image. Calculating the gradient is mainly we build up a function to redefine the slope as well as the increasing and decreasing trend of a certain pixel.
+- **Step 2**: Calculate the gradient of the contour of the smoothed image. Computing the gradient is mainly to construct a function to redefine the slope as well as the increasing and decreasing trend of a certain pixel.
 
-- Step 3: Next is to remove the points that are not maxima. As a side note, we will choose the pixels that are most likely to be considered the highest edge by relying on the gradient calculation in step 2. When a pixel has not reached its maximum (it meant it is still on the "side of the mountain" or at the "bottom of the mountain"), we won't evaluate that pixel as an edge.
+- **Step 3**: Remove the non-maxima points. As a side note, we will choose the pixels that are most likely to be considered the highest edge by relying on the gradient calculation in step 2. When a pixel has not reached its peak, we won't evaluate that pixel as an edge.
 
-Step 4: The final step is to remove the values that are less than the threshold level. If you look closely in an image, there are many values after calculating the gradient that will be selected as the maximum value. However, the maximum value here is only local maximum and only a few points are considered as global maximum. Therefore, we will remove some regions where the local maximum value is lower than the allowable threshold (the threshold value will depend on the type of model to choose more appropriate).
+- **Step 4**: The final step is to remove the values that are less than the threshold level. Should you observe an image carefully, there are many values after calculating the gradient that will be selected as the maximum value. However, the maximum value here is only local maximum and only a few points are considered as global maximum. Therefore, we will remove some regions in which the local maximum value is lower than the allowable threshold (the threshold value will depend on the type of model to choose more appropriate).
 
-This method is considered superior to other methods because it is less affected by noise and can detect weak edges. On the other hand, if the threshold is chosen too low, the boundary will be incorrect, or if the threshold is chosen too high, much of the important information about the boundary will be discarded. Based on the predefined threshold level, it will decide which points belong to the true boundary or not to the boundary. The lower the threshold level, the more
-edges are detected (but also noise and false edges appear). Conversely, if the threshold level is
-set higher, the fuzzy borders may be lost, or the borders will be broken.
+This method is considered as more superior to other methods because it is less affected by noises and it is also able to detect weak edges. On the other hand, if the threshold is chosen too low, the boundary will be incorrect, or if the threshold is chosen too high, much of the important information about the boundary will be discarded. Based on the predefined threshold level, it will decide which points belong to the true boundary or not to the boundary. The lower the threshold level, the more edges are detected (but also noise and false edges appear). Conversely, if the threshold level is set higher, the fuzzy borders may be lost, or the borders will be broken.
 
 #### 5. Hough transform to identify blood cells borderlines    
 
@@ -82,7 +80,11 @@ The x, y values only move in the range `|r - a| ≤ x ≤ |r + a|` and |`r - b| 
 
 
 
-For ease of visualization, we draw two small circles. Our task is to help the computer determine where the center of one of the two circles is. Pay attention to the circle highlighted in blue and you will see that they have a smaller radius than the radius of the green circle. We have estimated the radius distance of the blue circle to be r = 20 pixels. So, for each pixel that is said to be the edge (with the image on the edge being colored both blue or green), then proceed to draw a new circle with the center at the position in the cell under consideration - call x = position_row position and y = column_position. After obtaining the three values of x, y and r, the two values a and b can be deduced easily as follows:
+For ease of visualization, we draw two small circles. Our task is to help the computer determine where the center of one of the two circles is. Pay attention to the circle highlighted in blue and you will see that they have a smaller radius than the radius of the green circle. We have estimated the radius distance of the blue circle to be `r = 20 pixels`.     
+
+So, for each pixel that is said to be the edge (with the image on the edge being colored both blue or green), then proceed to draw a new circle with the center at the position in the cell under consideration - call `x = position_row position` and `y = column_position`.    
+
+After obtaining the three values of **x**, **y** and **r**, the two values **a** and **b** can be deduced easily as follows:
 
 ```python
 PI = 3.14159265358979323846264338327950
@@ -91,8 +93,8 @@ for t in range(361):
     a = x - y * np.cos(t*PI/180) 
     vote[a, b] += 1 
 ```
-As above, we will select the threshold value and take the positions vote[a, b] > threshold. The higher the threshold value, the more likely it is to be a perfect circle. But when the threshold value is too low, we are not sure that it is a circle (maybe even a small curve). In practice, it is virtually impossible to determine the radius in a fixed way, even if it is a human or a program with the best perception. So, when we practice in practice, we choose r in some interval [m, n].
-This means that the voting array will increase from 2D to 3D as [a, b, r].
+As above, we will select the threshold value and take the positions vote`[a, b] > threshold`. The higher the threshold value is, the more likely it is to be a perfect circle. However, when the threshold value is too low, we are not sure that it is a circle (maybe even a small curve). In practice, it is virtually impossible to determine the radius in a fixed way, even if it is a human or a program with the best perception. So, when we practice in practice, we choose **r** in some interval `[m, n]`.
+This means that the voting array will increase from **2D** to **3D** as `[a, b, r]`.
 
 #### 6. References
 [1] L. Chandrasekar and G. Durga. Implementation of hough transform for image processing applications. In 2014 International Conference on Communication and Signal Processing, pages 843–847, 2014. *doi: 10.1109/ICCSP.2014.6949962*.    
