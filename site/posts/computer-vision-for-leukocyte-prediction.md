@@ -13,11 +13,11 @@ Data analysis on number of blood cells, which are white blood cells and red bloo
 Since this blog is rather long, we divide it into 2 parts, the first one is to introduce our approach to the problem, our dataset and our approach to preprocess data, then the second one is to discuss further about how to identify our needed cells in the preprocessed data through Canny object detection and Hough transformation.
 
 #### Table of contents
-- [Part 1](https://ngctnnnn.github.io/posts/CNN-for-leukocyte-prediction.html)
+- [Part 1](https://ngctnnnn.github.io/posts/computer-vision-for-leukocyte-prediction.html)
     - 1. [Introduction](#1-introduction)
     - 2. [Dataset and data preprocessing](#2-dataset-and-data-preprocessing)
     - 3. [Foreground and background segmentation technique](#3-foreground-and-background-segmentation-technique)            
-- [Part 2](https://ngctnnnn.github.io/posts/CNN-for-leukocyte-prediction-2.html)
+- [Part 2](https://ngctnnnn.github.io/posts/computer-vision-for-leukocyte-prediction-2.html)
     - 4. [Edge detection with Canny method](#4-edge-detection-with-Canny-method)
     - 5. [Hough transformation to identify blood cells borderlines](#5-hough)
     - 6. [References](#6-references)
