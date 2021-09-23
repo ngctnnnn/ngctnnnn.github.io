@@ -8,7 +8,4 @@ A technical project @ ngctnnnn is a blogging site to share technical knowledge a
 --- 
 
 ### Visit my website at: [ngctnnnn.github.io](https://ngctnnnn.github.io) 👁️👁️
-### Contribution is open for every one 🖖🖖🖖
-- Fork this repo
-- Write a `markdown` file in the `site/posts` folder
-- Create a pull request
+### [Contribution](https://github.com/ngctnnnn/ngctnnnn.github.io/blob/main/CONTRIBUTING.md) is open for every one 🖖🖖🖖
