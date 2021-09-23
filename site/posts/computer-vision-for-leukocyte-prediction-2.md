@@ -45,9 +45,9 @@ This method mainly relies on the parameter accumulator after being added up (cal
 <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{150}&space;r^2&space;=&space;(x&space;-&space;a)^2&space;&plus;&space;(y&space;-&space;b)^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;r^2&space;=&space;(x&space;-&space;a)^2&space;&plus;&space;(y&space;-&space;b)^2" title="r^2 = (x - a)^2 + (y - b)^2" /></a>
 </p>
 
-Inside that, r is radius of circle, (a, b) is center of circle.
+s.t. **r** is radius of circle, `(a, b)` is the circle's center.       
 
-The x, y values only move in the range `|r - a| ≤ x ≤ |r + a|` and |`r - b| ≤ y ≤ |r + b|` so that the above formula is satisfied. The implementation of the algorithm to 'voting' the positions will be like the setting in determining the circle as above. Here we perform 'voting' on a 3D matrix with parameters **r**, **a**, **b**.
+The **x**, **y** values only move in the range `|r - a| ≤ x ≤ |r + a|` and |`r - b| ≤ y ≤ |r + b|` so that the above formula is satisfied. The implementation of the algorithm to 'voting' the positions will be like the setting in determining the circle as above. Here we perform 'voting' on a 3D matrix with parameters **r**, **a**, **b**.
 
 <div align='center' id='banner' style='display: flex; justify-content: space-between'>
   <div>
@@ -80,7 +80,7 @@ The x, y values only move in the range `|r - a| ≤ x ≤ |r + a|` and |`r - b| 
 
 
 
-For ease of visualization, we draw two small circles. Our task is to help the computer determine where the center of one of the two circles is. Pay attention to the circle highlighted in blue and you will see that they have a smaller radius than the radius of the green circle. We have estimated the radius distance of the blue circle to be `r = 20 pixels`.     
+For ease of visualization, we draw two small circles. Our task is to help the computer determine the center of two circles. Pay attention to the circle highlighted in blue and you will see that they have a smaller radius than the radius of the green circle. We have estimated the radius distance of the blue circle to be `r = 20 pixels`.     
 
 So, for each pixel that is said to be the edge (with the image on the edge being colored both blue or green), then proceed to draw a new circle with the center at the position in the cell under consideration - call `x = position_row position` and `y = column_position`.    
 
