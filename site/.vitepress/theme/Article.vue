@@ -81,6 +81,9 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
         display: inline-flex; justify-content: space-between; width: 100%
         "
       >
+      <div style="
+        display: inline-flex; justify-content: space-between; width: 100%
+        ">
         <div v-if="prevPost" class="py-8">
           <h2 class="text-xs tracking-wide uppercase text-gray-500">
             Previous Article
@@ -98,7 +101,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
             <a :href="nextPost.href">{{ nextPost.title }}</a>
           </div>
         </div>
-        
+      </div>
 
       </footer>
   </article>
