@@ -89,7 +89,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
             Previous Article
           </h2>
           <div class="link">
-            <a :href="prevPost.href">{{ prevPost.title }}</a>
+            <a :href="prevPost.href">← {{ prevPost.title }}</a>
           </div>
         </div>
 
@@ -98,7 +98,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
             Next Article
           </h2>
           <div class="link">
-            <a :href="nextPost.href">{{ nextPost.title }}</a>
+            <a :href="nextPost.href">{{ nextPost.title }} →</a>
           </div>
         </div>
       </div>
