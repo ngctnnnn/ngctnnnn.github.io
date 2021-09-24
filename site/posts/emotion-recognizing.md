@@ -40,7 +40,7 @@ However, in order to get a sufficient data for my model training, as well as avo
 The originally proposed VGGFace architecture was shown as:
 <p align="center">
   <img src="https://i1.wp.com/sefiks.com/wp-content/uploads/2019/04/vgg-face-architecture.jpg?ssl=1" alt="vggface-architecture">
-  <div algin ='center'>
+  <div align ='center'>
   <figcaption><b>Fig 1.</b> Visualization of VGGFace architecture</figcaption>
   </div>
 </p>

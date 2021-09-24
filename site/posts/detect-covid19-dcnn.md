@@ -20,7 +20,7 @@ The most crucial thing that make CXR images from pneumonia or COVID-19 patients 
 
 <p align="center">
   <img src="/covid+pneumonia+normal.png" alt="ground-glass-pattern image">
-  <div algin ='center'>
+  <div align ='center'>
     <figcaption><b>Fig 1.</b> Representative CXR images for 3 cases</figcaption>
     <figcaption>COVID-19 (A), Pneumonia (B) and non-respiratory disease (C)</figcaption>
   </div>

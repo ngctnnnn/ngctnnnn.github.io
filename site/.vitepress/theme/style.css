@@ -11,6 +11,14 @@ nav img {
   vertical-align: middle;
 }
 
+.spin-img {
+  transition: transform .7s ease-in-out;
+
+}
+.spin-img:hover{
+  transform: rotate(360deg);
+}
+
 .nav-text:hover{
   color: #666666;
 }

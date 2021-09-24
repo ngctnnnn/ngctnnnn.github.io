@@ -1,11 +1,11 @@
 <template>
   <div class="antialiased">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 sticky justify-center white" style="width: 100%">
-      <nav class="flex justify-between items-center py-10 font-bold justify white" style="width: 100%">
+      <nav class="flex justify-between items-center py-10 font-bold" style="width: 100%">
         <a class="text-xl" href="/" aria-label="A technical blog">
           <img
-            class="inline-block mr-2"
-            style="width: 36px; height: 31px"
+            class="inline-block mr-2 spin-img"
+            style="width: 36px; height: 31px;"
             alt="logo"
             src="/logo.svg"
           />
@@ -13,8 +13,8 @@
         </a>
         <div class="text-base text-gray-500 leading-5">
           <a
-            class="hover:text-gray-700"
-            href="https://github.com/ngctnnnn/ngctnnnn.github.io/blob/main/README.md"
+            class="hover:text-gray-700 text-xl"
+            href="https://github.com/ngctnnnn/ngctnnnn.github.io"
             target="_blank"
             rel="noopener"
             >About us</a
@@ -27,6 +27,7 @@
       <Article v-else />
     </main>
   </div>
+  
 </template>
 
 <script setup>
@@ -39,3 +40,7 @@ import Article from './Article.vue'
 const route = useRoute()
 const isIndex = computed(() => route.path.replace(/index.html$/, '') === '/')
 </script>
+
+<style>
+
+</style>
