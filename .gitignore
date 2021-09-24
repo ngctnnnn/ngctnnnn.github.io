@@ -1,5 +1,5 @@
 node_modules
+*.sh
 /.vitepress/dist
 *.log
 yarn.lock
-deploy.sh
