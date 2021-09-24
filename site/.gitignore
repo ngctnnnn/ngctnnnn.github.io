@@ -2,3 +2,4 @@ node_modules
 /.vitepress/dist
 *.log
 yarn.lock
+deploy.sh
