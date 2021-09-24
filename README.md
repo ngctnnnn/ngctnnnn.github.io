@@ -1,9 +1,9 @@
 <div align='center'>
 
-## A technical blog project
+## A technical blog 
 </div> 
 
-A technical project @ ngctnnnn is a blogging site to share technical knowledge about **Machine Learning**, **Deep Learning**, **Applied Mathematics** and more !
+A technical blog @ ngctnnnn is a blogging site to share technical knowledge about **Machine Learning**, **Deep Learning**, **Applied Mathematics** and more !
 
 <div align='center'>
   
