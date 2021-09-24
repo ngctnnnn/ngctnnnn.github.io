@@ -35,7 +35,7 @@ const { frontmatter } = useData()
                 target="_blank"
                 rel="noopnener noreferrer"
                 class="link"
-                >{{ frontmatter.linkedin }}</a
+                >@{{ frontmatter.linkedin }}</a
               >
             </dd>
           </dl>

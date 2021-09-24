@@ -11,6 +11,10 @@ nav img {
   vertical-align: middle;
 }
 
+.nav-text:hover{
+  color: #666666;
+}
+
 p img {
   margin: 0px auto;
 }

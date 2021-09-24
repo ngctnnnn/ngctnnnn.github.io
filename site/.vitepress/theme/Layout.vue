@@ -1,7 +1,7 @@
 <template>
   <div class="antialiased">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
-      <nav class="flex justify-between items-center py-10 font-bold">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 sticky justify-center white" style="width: 100%">
+      <nav class="flex justify-between items-center py-10 font-bold justify white" style="width: 100%">
         <a class="text-xl" href="/" aria-label="A technical blog">
           <img
             class="inline-block mr-2"
@@ -9,7 +9,7 @@
             alt="logo"
             src="/logo.svg"
           />
-          <span v-if="!isIndex" class="hidden md:inline">A technical blog</span>
+          <span v-if="!isIndex" class="hidden md:inline nav-text">A technical blog</span>
         </a>
         <div class="text-base text-gray-500 leading-5">
           <a
