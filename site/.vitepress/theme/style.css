@@ -12,14 +12,13 @@ nav img {
 }
 
 .spin-img {
-  transition: transform .7s ease-in-out;
-
+  transition: transform 0.7s ease-in-out;
 }
-.spin-img:hover{
+.spin-img:hover {
   transform: rotate(360deg);
 }
 
-.nav-text:hover{
+.nav-text:hover {
   color: #666666;
 }
 
@@ -35,7 +34,7 @@ p img {
   color: var(--c-brand);
 }
 
-.link-next{
+.link-next {
   color: var(--c-brand);
 }
 
@@ -46,7 +45,6 @@ p img {
 .link-next:hover {
   color: var(--c-brand-light);
 }
-
 
 .header-anchor {
   display: none;
