@@ -1,8 +1,8 @@
 ---
 title: An introduction to Genetic Algorithm 
 date: 2021-09-30
-author: Bui Tri Dung
-gravatar:  
+author: Dzung Tri Bui
+gravatar: 9d7fdd037b40f9d989d82eac5c97dd33?s=80  
 linkedin: 'btrdung'
 
 --- 
@@ -32,7 +32,7 @@ pop = np.random.normal(mu, sigma, 50000)
 We can create a population which individuals are followed normal distribution. For each individual has a fitness value of its. To have a clearly sight, we will visualise how fitness values are individuals?
 
 <p align="center">
-  <img src="./../public/individual_in_fx_simple_floating_number.png" alt="Algorithm about GA"/>
+  <img src="/individual_in_fx_simple_floating_number.png" alt="Algorithm about GA"/>
 </p> 
 
 Since we created population by normal distribution, we can see that almost individuals will stand near to 0. In next step, our goal is how we can get a next generation which has better than the current generation. 
@@ -40,7 +40,7 @@ Since we created population by normal distribution, we can see that almost indiv
 In a real nature, every animals or humans have their own genetic code. Starting with this point, we can propose for each individual has their own genetic code, represented in 32-bit binary. The first $a$ bits for interger part and the remaining $b$ bits for fractional part. Because it is not easy when represent in floating number, so we will assume that we are solving in integer number. The visialise should be become to: 
 
 <p align="center">
-  <img src="./../public/individual_in_fx_simple_integer_numer.png" alt="Algorithm about GA"/>
+  <img src="/individual_in_fx_simple_integer_numer.png" alt="Algorithm about GA"/>
 </p> 
 
 Now, we just consider about fractional part but we still keep the representation of genetic code of individual in 32-bit binary. Example: 
@@ -69,7 +69,7 @@ As we mentioned above, our goal to get next generation is better than current ge
 After filtering the population, we will go to a crossover step. 
 
 <p align="center">
-  <img src="./../public/EAPROCESS.svg" alt="Algorithm about GA"/>
+  <img src="/EAPROCESS.svg" alt="Algorithm about GA"/>
 </p> 
 
 
