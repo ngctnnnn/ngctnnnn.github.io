@@ -40,7 +40,6 @@ Hough transformation is one of the most basic methods for feature extraction in 
 
 This method mainly relies on the parameter accumulator after being added up (called “voting”) to get the maximum values. We will identify objects that are supposed to be circular in image with the following formula:
 
-<!-- TODO: INSERT formula -->
 <p align="center">
 <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{150}&space;r^2&space;=&space;(x&space;-&space;a)^2&space;&plus;&space;(y&space;-&space;b)^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{150}&space;r^2&space;=&space;(x&space;-&space;a)^2&space;&plus;&space;(y&space;-&space;b)^2" title="r^2 = (x - a)^2 + (y - b)^2" /></a>
 </p>

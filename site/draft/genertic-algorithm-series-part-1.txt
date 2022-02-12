@@ -29,7 +29,7 @@ mu, sigma = 0, 10
 pop = np.random.normal(mu, sigma, 50000)
 ```
  
-We can create a population which individuals are followed normal distribution. For each individual has a fitness value of its. To have a clearly sight, we will visualise how fitness values are individuals?
+We can create a population which individuals are followed normal distribution. For each individual has a fitness value of its. To have a clearly sight, we will visualize how fitness values are individuals?
 
 <p align="center">
   <img src="/individual_in_fx_simple_floating_number.png" alt="Algorithm about GA"/>
@@ -37,7 +37,7 @@ We can create a population which individuals are followed normal distribution. F
 
 Since we created population by normal distribution, we can see that almost individuals will stand near to 0. In next step, our goal is how we can get a next generation which has better than the current generation. 
 
-In a real nature, every animals or humans have their own genetic code. Starting with this point, we can propose for each individual has their own genetic code, represented in 32-bit binary. The first $a$ bits for interger part and the remaining $b$ bits for fractional part. Because it is not easy when represent in floating number, so we will assume that we are solving in integer number. The visialise should be become to: 
+In a real nature, every animals or humans have their own genetic code. Starting with this point, we can propose for each individual has their own genetic code, represented in 32-bit binary. The first $a$ bits for integer part and the remaining $b$ bits for fractional part. Because it is not easy when represent in floating number, so we will assume that we are solving in integer number. The visualize should be become to: 
 
 <p align="center">
   <img src="/individual_in_fx_simple_integer_numer.png" alt="Algorithm about GA"/>
@@ -54,7 +54,7 @@ Now, we just consider about fractional part but we still keep the representation
 | 159325 | 0000 0000 0000 0110 0110 1110 0101 1101 |
 
 ## Rank and selection
-As we mentioned above, our goal to get next generation is better than current generation by pass on their gens to the next generation. But the first thing we need to do is the population should be filted by removing a half lowest fitness of the number of individuals in population. Then, the next generation has more probability to create a new generation increasing fitness than current generation. Example:
+As we mentioned above, our goal to get next generation is better than current generation by pass on their gens to the next generation. But the first thing we need to do is the population should be filtered by removing a half lowest fitness of the number of individuals in population. Then, the next generation has more probability to create a new generation increasing fitness than current generation. Example:
 
 | Individual | Binary representation (32-bit)| Status |
 | -- | -- | -- |
