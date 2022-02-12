@@ -6,12 +6,13 @@ gravatar: 6c1ae5231dcadf6b4297a6ddf6315478?s=80
 linkedin: 'ngctnnnn'
 
 --- 
-The needs for appropriate deep neural networks for most modern problems have increased dramatically, and finding the right architecture is a challenge. Almost deep architectures nowadays are manually designed with tremendous times of trial-and-errors and state-of-the-arts are those with multiple layers,  connections ignoring a suitable explanation. In this work, I would give a thorough introduction on Neural Architecture Search (NAS) and recent works towards this field.
+The needs for appropriate deep neural networks for most modern problems have increased dramatically, and finding the right architecture is a challenge. Almost deep architectures nowadays are manually designed with tremendous times of trial-and-errors and state-of-the-arts are those with multiple layers,  connections ignoring a suitable explanation. 
 
 ---
 #### Table of contents
 - 1. [Introduction](https://ngctnnnn.github.io/posts/neural-architecture-search.html#:~:text=1.%20Introduction)
 - 2. [Recent literature on Neural Architecture Search](https://ngctnnnn.github.io/posts/neural-architecture-search.html#:~:text=2.%20Recent%20literature%20on%20Neural%20Architecture%20Search) 
+- 3. [Conclusion](https://ngctnnnn.github.io/posts/neural-architecture-search.html#:~:text=3.%20Conclusion)
 ---
 
 ### 1. Introduction:
@@ -26,13 +27,13 @@ The needs for appropriate deep neural networks for most modern problems have inc
     </p>
 
 ### 2. Recent literature on Neural Architecture Search
-Mentioning NAS often means mentioning the work of [[Zoph and Le. 2017](http://proceedings.mlr.press/v70/bello17a/bello17a.pdf)] on first bringing out the concept of finding neural architecture and how to resolve the problem.
 #### a. [Neural Optimizer Search with Reinforcement Learning](http://proceedings.mlr.press/v70/bello17a/bello17a.pdf)
-- The very first solution for the NAS is to use a ***Recurrent Neural Network controller*** to generate a string representating the outcome network using **Reinforcement Learning** in which: 
-    - The <ins>environment</ins> for the NAS is the search space of the problem.
-    - The <ins>actions</ins> are the search strategies that we would love to apply on.
-    - The <ins>reward</ins> is the accuracy of the chosen architecture trained on CIFAR-10 dataset.
-- The results towards the initial approach is outstanding when the final architectures have a tendency to **converge near the state-of-the-art architectures** that we know nowadays, e.g. **AlexNet** [[Krizhevsky et al. (2012)](https://dl.acm.org/doi/10.5555/2999134.2999257)] or **VGG** [[Simonyan and Zisserman (2014)](https://arxiv.org/abs/1409.1556)]. And moreover, the result architecture is not overfitted on the train dataset but has a strong transferability when testing on different datasets.      
+Mentioning NAS often means mentioning the work of [Zoph and Le. 2017](http://proceedings.mlr.press/v70/bello17a/bello17a.pdf) on first bringing out the concept of finding neural architecture and how to resolve the problem. The very first solution for the NAS is to use a ***Recurrent Neural Network controller*** to generate a string representating the outcome network using **Reinforcement Learning** in which: 
+- The <ins>environment</ins> for the NAS is the search space of the problem.
+- The <ins>actions</ins> are the search strategies that we would love to apply on.
+- The <ins>reward</ins> is the accuracy of the chosen architecture trained on CIFAR-10 dataset.
+
+The results towards the initial approach is outstanding when the final architectures have a tendency to **converge near the state-of-the-art architectures** that we know nowadays, e.g. **AlexNet** [[Krizhevsky et al. (2012)](https://dl.acm.org/doi/10.5555/2999134.2999257)] or **VGG** [[Simonyan and Zisserman (2014)](https://arxiv.org/abs/1409.1556)]. And moreover, the result architecture is not overfitted on the train dataset but has a strong transferability when testing on different datasets.      
 
 However, the approach costs a fortune of computational resources since each step, they have to construct the network from the beginning and the network has to be trained from scratch. The power of the very first method of NAS and the limitations from computational process is the primary motivation for later works on various aspects which are search spaces, datasets, training-free methods and so on.
 #### b. NAS Benchmark:
