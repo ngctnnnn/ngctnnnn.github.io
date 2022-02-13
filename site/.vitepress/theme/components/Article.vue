@@ -13,6 +13,8 @@ function findCurrentIndex() {
   return posts.findIndex((p) => p.href === route.path)
 }
 
+
+
 // use the customData date which contains pre-resolved date info
 const date = computed(() => posts[findCurrentIndex()].date)
 const nextPost = computed(() => posts[findCurrentIndex() - 1])
@@ -20,6 +22,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
 </script>
 
 <template>
+
   <article class="xl:divide-y xl:divide-gray-200">
     <header class="pt-6 xl:pb-10 space-y-1 text-center">
       <Date :date="date" />

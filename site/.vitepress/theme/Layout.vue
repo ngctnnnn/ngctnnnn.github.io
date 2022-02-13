@@ -19,7 +19,7 @@ const isIndex = computed(() => route.path.replace(/index.html$/, '') === '/')
             class="inline-block mr-2 spin-img"
             style="width: 36px; height: 31px;"
             alt="logo"
-            src="/logo.svg"
+            src="/logo.png"
           />
           <span v-if="!isIndex" class="hidden md:inline nav-text">A technical blog</span>
           </a>
