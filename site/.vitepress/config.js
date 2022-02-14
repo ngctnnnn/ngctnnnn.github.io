@@ -16,5 +16,16 @@ module.exports = {
         href: '/favicon.ico'
       }
     ]
-  ]
+  ],
+  // markdown: {
+  //   config: (md) => {
+  //     md.use(require('markdown-it-katex'))
+  //     md.render = function () {
+  //       return md
+  //         .render
+  //         .apply(this, arguments)
+  //         .replace(/<span class="katex">/g, '<span v-pre class="katex">')
+  //     }
+  //   },
+  // },
 }

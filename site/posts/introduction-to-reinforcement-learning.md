@@ -9,9 +9,9 @@ Besides traditional data-based methods on Machine Learning, e.g. Clustering or M
 
 ---
 ## Table of contents
-- 1. [Introduction](https://ngctnnnn.github.io/posts/introduction-to-reinforcement-learning.html)
-- 2. [Principal (mathematical) concepts of Reinforcement Learning](https://ngctnnnn.github.io/posts/introduction-to-reinforcement-learning.html) 
-- 3. [Conclusion](https://ngctnnnn.github.io/posts/introduction-to-reinforcement-learning.html)
+- 1. [Introduction](#:~:text=1.%20What%20is%20Reinforcement%20Learning)
+- 2. [Principal (mathematical) concepts of Reinforcement Learning](#:~:text=2.%20Principal%20(mathematical)%20concepts%20of%20Reinforcement%20Learning) 
+- 3. [Conclusions](#:~:text=3.%20Conclusions)
 ---
 ## 1. What is Reinforcement Learning
 Let say you want to help Pac-man on the game of Pac-man achieve <ins>the best score</ins> among <ins>different rounds and difficulties</ins>. However, you do not know surely how to play the game optimally and all you can do is to <ins>give Pac-man the instructions</ins> about the game only. On learning to find the best way to play the game with a maximum score, Pac-man has to <ins>play the game continuously, continuously, and continuously</ins>. That is the most basic understanding on what Reinforcement Learning looks like. 

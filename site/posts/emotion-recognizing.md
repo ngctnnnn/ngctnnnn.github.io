@@ -15,7 +15,7 @@ Introduce a deep learning approach to the problem of recognizing emotions in rea
 1. [Introduction](#:~:text=1.%20Introduction)
 2. [Dataset](#:~:text=2.%20Dataset)
 3. [Proposed architecture](#:~:text=3.%20Proposed%20architecture)
-4. [References](#4:~:text=4.%20References)
+4. [References](#:~:text=4.%20References)
 
 ---
 #### 1. Introduction

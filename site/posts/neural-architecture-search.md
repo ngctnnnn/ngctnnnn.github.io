@@ -10,12 +10,12 @@ The needs for appropriate deep neural networks for most modern problems have inc
 
 ---
 #### Table of contents
-- 1. [Introduction](https://ngctnnnn.github.io/posts/neural-architecture-search.html#:~:text=1.%20Introduction)
-- 2. [Recent literature on Neural Architecture Search](https://ngctnnnn.github.io/posts/neural-architecture-search.html#:~:text=2.%20Recent%20literature%20on%20Neural%20Architecture%20Search) 
-- 3. [Conclusion](https://ngctnnnn.github.io/posts/neural-architecture-search.html#:~:text=3.%20Conclusion)
+- 1. [Introduction](#:~:text=1.%20Introduction)
+- 2. [Recent literature on Neural Architecture Search](#:~:text=2.%20Recent%20literature%20on%20Neural%20Architecture%20Search) 
+- 3. [Conclusion](#:~:text=3.%20Conclusions)
 ---
 
-### 1. Introduction:
+### 1. Introduction
 - NAS's concept begins with a ***search space*** of S, which could be under the form of different to-find-layers (macro-level), various operations (micro-level) or even different complete architectures that we would like to find. The paradigm then flows to the ***search strategy*** in which our heuristics would perform their strength towards the problem, e.g. Genetic Algorithm, Reinforcement Learning. 
 - On applying the suitable search strategy to the search space, one (or many) architectures is picked up from the search space and put into the ***evaluation step***. The chosen architecture is evaluated by real training on the given dataset and the fitness is returned as the form of our wanted metric for the problem. 
 - This whole procedure is ***repeated continuously*** until we found out the outperformed architecture for the problem or the algorithm met the ***terminated criterion***, i.e. number of iterations, out of computational resources.
