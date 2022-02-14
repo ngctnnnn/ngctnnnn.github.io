@@ -1,4 +1,5 @@
 ---
+
 title: An introduction to Reinforcement Learning
 date: 2022-02-13
 author: Tan Ngoc Pham
@@ -11,8 +12,15 @@ Besides traditional data-based methods on Machine Learning, e.g. Clustering or M
 ## Table of contents
 - 1. [Introduction](#:~:text=1.%20What%20is%20Reinforcement%20Learning)
 - 2. [Principal (mathematical) concepts of Reinforcement Learning](#:~:text=2.%20Principal%20(mathematical)%20concepts%20of%20Reinforcement%20Learning) 
-- 3. [Conclusions](#:~:text=3.%20Conclusions)
+  - a. [Transition & Reward](#:~:text=a.%20Transition%20and%20Reward)
+  - b. [Stochastic & Deterministic Policy](#:~:text=b.%20Policy)
+  - c. [State-Value & Action-Value Function](#:~:text=c.%20State%2DValue%20and%20Action%2DValue%20Function)
+- 3. [A literature on preliminary approaches in Reinforcement Learning](#:~:text=3.%20A%20literature%20on%20preliminary%20approaches%20in%Reinforcement%20Learning)
+  - a. [Dynamic Programming](#:~:text=a.%20Dynamic%20Programming)
+  - b. [Q-Learning](#:~:text=b.%20Q%2DLearning)
+- 4. [Conclusions](#:~:text=4.%20Conclusions)
 ---
+
 ## 1. What is Reinforcement Learning
 Let say you want to help Pac-man on the game of Pac-man achieve <ins>the best score</ins> among <ins>different rounds and difficulties</ins>. However, you do not know surely how to play the game optimally and all you can do is to <ins>give Pac-man the instructions</ins> about the game only. On learning to find the best way to play the game with a maximum score, Pac-man has to <ins>play the game continuously, continuously, and continuously</ins>. That is the most basic understanding on what Reinforcement Learning looks like. 
     <p align="center">
@@ -118,6 +126,109 @@ The optimal policy would be the argmax from the optimal policy from the aforemen
 <b>π<sub>*</sub></b> = argmax<sub><b>π</b></sub>{<b>V<sub>π</sub></b>(<b>s</b>) <b>π<sub><span>&#42;</span></sub></b>}
 </p>
 
-## 3. Conclusions
-- Throughout this blog, I have brought to you <ins>the most preliminary concepts</ins> on what Reinforcement Learning looks like and its mathematical fundamental.
-- Further construction in Reinforcement Learning and the algorithms surrounding it would be settled on later posts on this blog.
+## 3. A literature on preliminary approaches in Reinforcement Learning
+In this section, I would drive you through the very initial solution for Reinforcement Learning
+### a. Dynamic Programming
+Dynamic Programming is the first thought coming into Computer Scientists when Reinforcement Learning had just appeared as a successive of previous mathematics foundations such as Bellman Equations [[Bellman (1959)](https://link.springer.com/referenceworkentry/10.1007/978-0-387-30164-8_71)] and Markov Decision Processes [[Puterman (1994)](https://dl.acm.org/doi/10.5555/528623)]. There are a great number of DP-based and DP-inspired algorithms to deal with Reinforcement Learning. There lie two most highlighted algorithms when mentioned about DP in RL which are <b><ins>Policy Iteration</ins></b> and <b><ins>Value Iteration</ins></b>. 
+
+Both algorithms are DP algorithms based on Bellman Equations which aimed to find an optimal policy <b>π<sub>&#42;</sub></b> in a Reinforcement Learning environment using <ins>one-step look-ahead strategy</ins>.
+
+| Policy Iteration | Value Iteration | 
+| :---: | :---: |
+| Faster | Slower |
+| Fewer iterations | More iterations | 
+| Guaranteed to converge |  Guaranteed to converge |
+| Algorithm is more <b>sophisticated</b> | Algorithm is more <b>trouble-free</b> | 
+| Start with <b>a random policy</b> | Start with <b>a random value function</b> |
+| <ins>Cheaper</ins> computational costs | <ins>More expensive</ins> computational costs | 
+
+<p align='center'>
+<b>Table 1. </b>A minor comparison between Policy Iteration and Value Iteration.
+</p>
+
+#### Policy Iteration
+In policy iteration, one fixed policy is utilized firstly. Then, the algorithm would traverse through iterations, on every iteration, the policy is evaluated and updated gradually until the convergence.
+```python
+def policy_iteration(env, max_iters, gamma):
+    # Intialize a random policy
+    policy = np.zeros(env.observation_space.n, dtype=np.int)
+    for i in range(len(policy)):
+        import random
+        policy[i] = random.randint(0, 3)
+
+    for i in range(max_iters):
+        policy_stable = True 
+
+        # Evaluate the present policy
+        v_values =  policy_evaluation(env, 
+                                      max_iters=max_iters, 
+                                      gamma=gamma, 
+                                      policy=policy)
+
+        # Update the policy
+        new_policy = policy_improvement(env, 
+                                        gamma=gamma, 
+                                        v_val=v_values, 
+                                        policy=policy)
+
+        # Check convergence
+        if np.all(np.array_equiv(policy, new_policy)): 
+            policy_stable = True
+            print(f'Converged at {i}-th iteration')
+            break
+        else:
+            policy_stable = False
+        policy = new_policy.copy()
+    return policy
+```
+
+#### Value Iteration
+Value Iteration, on the other hand, begins with <ins>a selected value function</ins> and iterates over that value function. Value Iteration undergoes a heavier computing process by taking a maximum over the utility function for <ins>all possible actions</ins>. And subsequently, Value Iteration has a tendency to take more iterations before fully converged compared to the Policy one.
+
+```python
+def value_iteration(env, max_iters, gamma):
+    v_values = np.zeros(env.observation_space.n)
+
+    for i in range(max_iters):
+        prev_v_values = np.copy(v_values)
+
+        # Compute the value for state
+        for state in range(env.observation_space.n):
+            q_values = []
+            # Compute the q-value for each action
+            for action in range(env.action_space.n):
+                q_value = 0
+                # Loop through each possible outcome
+                for prob, next_state, reward, done in env.P[state][action]:
+                    q_value += prob * (reward + gamma * prev_v_values[next_state])
+                
+                q_values.append(q_value)
+            
+            # Select the best action
+            best_action = np.argmax(q_values)
+            v_values[state] = q_values[best_action]
+        
+        # Check convergence
+        if np.all(np.isclose(v_values, prev_v_values)):
+            print(f'Converged at {i}-th iteration.')
+            break
+    
+    return v_values
+```
+
+### b. Q-Learning
+Q-Learning is <ins>a <b>model-free</b> reinforcement learning algorithm</ins> to learn the quality of action **a** to tell the agent which actions to execute at a certain state **s**. It does not require a model of a certain environment. It can handle dynamically environmental problems and achieve rewards without any adaptations. The development of Q-Learning is actually a breakthrough in the early days of reinforcement learning.
+
+The interesting point in Q-Learning is the independence of the current policy to choose the second action <b>a<sub>t+1</sub></b>. It, essentially, estimates <b>Q<sub><span>&#42;</span></sub></b> among the best Q-values, but it does not matter which action leads to this maximum Q-value and in the next step, this algorithm does not have to follow that policy.
+
+<div align="center">
+    <img width=80% src="/q-learning.png" alt="q-learning">
+    <div align ='center'>
+        Pseudo code for Updating Q-Value <a href="https://github.com/DTA-UIT/Deep-Q-Network/blob/main/report/Deep%20Q%20Network.pdf">[Tan Ngoc Pham et al. (2020)]</a>
+    </div>
+</div>
+
+
+## 4. Conclusions
+- Throughout this blog, I have brought to you <ins>the most preliminary concepts</ins> on what Reinforcement Learning looks like, its mathematical fundamental and some of the algorithms to deal with Reinforcement Learning problems.
+- Further construction in Reinforcement Learning and more intensive algorithms surrounding would be settled on later posts on this blog.
