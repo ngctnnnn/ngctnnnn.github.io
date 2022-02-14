@@ -29,10 +29,10 @@ Let say you want to help Pac-man on the game of Pac-man achieve <ins>the best sc
 
 
 Mathematically, we could denote Pac-man as **an agent** and the game as **the environment**:
-- One <ins>random strategy</ins> to play the Pac-man game as **a policy** (`π ∈ Π`).
-- One <ins>position of Pac-man at a specific time</ins> as **a state** (`s ∈ S`).
+- One <ins>random strategy</ins> to play the Pac-man game as **a policy** (**π ∈ Π**).
+- One <ins>position of Pac-man at a specific time</ins> as **a state** (**s ∈ S**).
 - An <ins>event that Pac-man moves</ins> forward (or backward of left or right) as **an action** (<b>a ∈ A</b>).
-- A <ins>score that Pac-man received</ins> after taking an action as **the reward** (`r ∈ R`).
+- A <ins>score that Pac-man received</ins> after taking an action as **the reward** (**r ∈ R**).
     <p align="center">
       <img width=80% src="https://lilianweng.github.io/lil-log/assets/images/RL_illustration.png" alt="illustration">
       <div align ='center'>
